@@ -80,7 +80,7 @@ aboutme: 框框之下，是自由<br><br>荒诞之中，即真理<br>
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
  type: git
- repo: git@github.com:kuangkuang1991/kuangkuang1991.github.io.git
+ repo: git@github.com:chenkuangkuang/kuangkuang1991.github.io.git
  branch: master
 
 jsonContent:
