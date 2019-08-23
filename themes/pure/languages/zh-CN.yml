@@ -28,8 +28,8 @@ page:
   books-desc: 个人收藏的书单推荐给大家
   movies: 电影
   movies-desc: 个人喜欢的电影推荐给大家
-  links: 友情链接
-  links-desc: 欢迎交换链接，可在当前页面留言
+  links: 推荐链接
+  links-desc: 推荐一些个人比较喜欢的站点
   about: 关于
 pagination: 
   next: 下一页
@@ -38,7 +38,7 @@ pagination:
   pageof: Page %d of %s
 widget:
   search: 搜索
-  board: 公告
+  board: "\n"
   archive: 归档
   tags: 标签
   categories: 分类
@@ -72,7 +72,7 @@ total:
   article: 共 %d 篇文章
   tag: 共 %d 个标签
   category: 共 %d 个分类
-  link: 共 %d 个友情链接
+  link: 共 %d 个推荐链接
   repository: 共 %d 个项目
 donate:
   qrcode_alt: 扫码支持

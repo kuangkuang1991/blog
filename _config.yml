@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.kuang2.com
+url: http://www.kuang2.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -84,20 +84,37 @@ deploy:
  branch: master
 
 jsonContent:
-  meta: false
-  pages: false
+  keywords: false # (english, spanish, polish, german, french, italian, dutch, russian, portuguese, swedish)
   posts:
     title: true
+    slug: true
     date: true
+    updated: true
+    comments: true
     path: true
-    text: false
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: true # but only if root keywords option language was set
+    text: true
     raw: false
     content: false
-    slug: false
-    updated: false
-    comments: false
-    link: false
-    permalink: false
-    excerpt: false
-    categories: false
+    categories: true
     tags: true
+
+# hexo-neat
+neat_enable: true
+neat_html:
+  enable: true
+  exclude:  
+neat_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '*.min.js'

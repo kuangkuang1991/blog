@@ -539,7 +539,13 @@ mark,
 }
 
 .text-muted {
-  color: #777777 !important;
+  color: #a7a3a3 !important;
+}
+.article-title{
+  font-weight: bolder;
+}
+.article-entry, .marked-body{
+  color: #636262 !important;
 }
 
 .text-primary {
@@ -6440,6 +6446,7 @@ body.no-sidebar .sidebar {
 
 .article-list .article-title {
   font-size: 18px;
+  font-weight: bolder;
 }
 
 .article-toc .toc-title {
