@@ -1,6 +1,6 @@
 ---
 title: 李世石又输了！AlphaGo写给人类的20句话，句句震撼！
-date: 2019-07-11 15:30:18
+date: 2016-03-12 16:30
 categories: 随笔
 tags: 杂感
 toc: true

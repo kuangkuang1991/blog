@@ -1,6 +1,6 @@
 ---
 title: 当iPhone成了街机，请让我安心用小米
-date: 2019-07-11 15:30:18
+date: 2016-11-07 21:59
 categories: 随笔
 tags: 杂感
 toc: true
