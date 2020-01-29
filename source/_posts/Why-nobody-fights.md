@@ -1,6 +1,6 @@
 ---
 title: Why-nobody-fights
-date: 2019-07-11 15:30:18
+date: 2018-07-11 15:30:18
 categories: 随笔
 tags: 杂感
 toc: true
@@ -78,19 +78,3 @@ toc: true
 why nobody fights？
 
 maybe because they needn't .
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
