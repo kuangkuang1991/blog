@@ -7,3 +7,5 @@
 hexo g 生成html
 
 hexo d 发布
+
+hexo s 运行本地服务

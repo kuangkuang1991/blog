@@ -548,6 +548,43 @@ mark,
   color: #636262 !important;
 }
 
+.marked-body p img{
+  width: 90%;
+  margin: 20px auto;
+  box-shadow: 0 0 10px #000;
+}
+
+.books{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.books img{
+  width:100px;
+  height:137px;
+  box-shadow: 0 0 10px #000;
+  margin:20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.books img:hover{
+  box-shadow: 0 0 20px #000;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 400px) {
+  .books img{
+    width:55px;
+    height:79px;
+    box-shadow: 0 0 10px #000;
+    margin:20px 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+}
+
 .text-primary {
   color: #2196f3;
 }
