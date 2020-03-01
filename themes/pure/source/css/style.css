@@ -484,7 +484,7 @@ h6,
 }
 
 p {
-  margin: 0 0 10.5px;
+  margin: 0 0 22px;
 }
 
 .lead {
@@ -6595,11 +6595,15 @@ body.okayNav-loaded {
 .okayNav ul li {
   display: inline-block;
   margin-left: 15px;
+  background: #1890ff;
+  padding: 3px 5px;
+  border-radius: 5px;
 }
 
 .okayNav a {
   position: relative;
   z-index: 1;
+  color: #fff;
 }
 
 .okayNav a.active {
@@ -6721,7 +6725,7 @@ body.okayNav-loaded {
 }
 
 .okayNav a {
-  color: #2e2e33;
+  color: #fff;
   font-weight: 400;
 }
 

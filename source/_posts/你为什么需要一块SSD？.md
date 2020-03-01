@@ -1,8 +1,8 @@
 ---
 title: 你为什么需要一块SSD？
 date: 2016-01-09 21:31
-categories: 随笔
-tags: 杂感
+categories: 数码
+tags: 数码
 toc: true
 ---
 据说有这么几样东西，在年纪轻轻的时候千万不要碰：

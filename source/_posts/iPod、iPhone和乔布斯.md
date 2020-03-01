@@ -1,8 +1,8 @@
 ---
 title: iPod、iPhone和乔布斯
 date: 2019-10-05 12:48
-categories: 随笔
-tags: 杂感
+categories: 读书笔记
+tags: 读书笔记
 toc: true
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: 当iPhone成了街机，请让我安心用小米
 date: 2016-11-07 21:59
-categories: 随笔
-tags: 杂感
+categories: 数码
+tags: 数码
 toc: true
 ---
 是的，我不得不羞愧地承认，我的手机是小米。

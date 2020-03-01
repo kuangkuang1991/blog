@@ -2,7 +2,8 @@
 title: 用什么都别用iphone—【热点练笔1：iphone6s】
 date: 2015-09-13 14:58
 categories: 随笔
-tags: 杂感
+tags: 
+- 数码
 toc: true
 ---
 <div class="image-package"><img src="http://upload-images.jianshu.io/upload_images/29336-81c95e996349b441.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/1080/q/100"><br><div class="image-caption">iPhone 6s</div></div><p>

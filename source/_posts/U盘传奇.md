@@ -1,8 +1,8 @@
 ---
 title: U盘传奇
 date: 2015-06-25 23:09
-categories: 随笔
-tags: 杂感
+categories: 脑洞
+tags: 脑洞
 toc: true
 ---
 在我们寝室，小到塑料袋，大到吹风机，都是六人各用各的，唯独那个U盘，从来公用，不分你我。

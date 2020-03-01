@@ -1,8 +1,11 @@
 ---
 title: react-native遇坑-填坑(上)
-date: 2019-09-05 12:48
-categories: 随笔
-tags: 杂感
+date: 2019-05-05 12:48
+categories: 技术
+tags: 
+- 技术
+- JS
+- reactnatie
 toc: true
 ---
 

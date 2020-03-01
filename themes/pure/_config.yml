@@ -33,7 +33,7 @@ site:
     url: favicon.jpg
   title: 框框之下 # 页面title
   favicon: favicon.jpg
-  board: <div>欢迎关注我的公众号：框框之上，微信扫一扫 <br><br><div style='text-align:center'><img src='/images/alipayimg.png' width='140' height='140'></div></div> # 站点公告
+  board: <div><div style='text-align:center'><img title="关注我的个人公众号框框之下" src='/images/alipayimg.png' width='140' height='140'></div></div> # 站点公告
   copyright: false # 底部版权信息
 
 # config

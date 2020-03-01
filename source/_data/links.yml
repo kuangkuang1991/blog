@@ -1,3 +1,7 @@
+我的自制web工具之一:
+    link: https://kuangkuang1991.gitee.io/test/
+    avatar: https://kuangkuang1991.gitee.io/test/imgs/peng.jpg
+    desc: '在我个人书单的两百多张书封面中自选24个做一张朋友圈封面图'
 imiku工具集合:
     link: https://tools.imiku.me
     avatar: https://tools.imiku.me/favicon.ico
@@ -9,4 +13,36 @@ imiku工具集合:
 电影港:
     link: http://www.dygang.com/
     avatar: http://www.dygang.com/images/logo.gif
-    desc: '还比较新的电影资源下载网站'
+    desc: '还比较新的电影资源下载网站，资源免费，迅雷下载，'
+鸠摩搜书:
+    link: https://www.jiumodiary.com/
+    avatar: https://www.jiumodiary.com/images/favicon.png
+    desc: '资源还比较多的，至今坚挺的免费搜书资源站点'
+Smallpdf:
+    link: https://smallpdf.com/cn
+    avatar: https://smallpdf.com/favicon.png
+    desc: '最强在线PDF处理工具，包括PDF的压缩、分页及与word、ppt的相互转换'
+奶牛快传:
+    link: https://cowtransfer.com/  
+    avatar: https://background.cowtransfer.com/version/1582883434652/image/cow.3011c44.png
+    desc: '在线文件传输工具，免账号，用url即可下载，速度快'
+tinypng:
+    link: https://tinypng.com/
+    avatar: https://tinypng.com/images/apple-touch-icon.png
+    desc: '最强的在线图片压缩工具，完全免费，单次最多处理20张'
+配色网:
+    link: http://www.peise.net/color/
+    avatar: http://www.peise.net/images/logo.gif
+    desc: '好用的配色网站，提供了丰富的色彩、搭配、风格，附上各种格式的色值'
+张鑫旭的个人站:
+    link: https://www.zhangxinxu.com/wordpress/
+    avatar: https://image.zhangxinxu.com/image/blog/zxx_240_0818.jpg
+    desc: '国内最知名的偏CSS文章前端写作者张鑫旭的个人站'
+阮一峰的个人站:
+    link: http://www.ruanyifeng.com/blog/archives.html
+    avatar: https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=982ee2d379cb0a4685228c3f53589119/b812c8fcc3cec3fd68dea75cd488d43f87942732.jpg
+    desc: '国内最知名的偏JS文章前端写作者阮一峰的个人站'
+油猴脚本资源:
+    link: https://greasyfork.org/zh-CN/
+    avatar: https://greasyfork.org/assets/blacklogo96-e0c2c76180916332b7516ad47e1e206b42d131d36ff4afe98da3b1ba61fd5d6c.png
+    desc: '最多用户的油猴（Tampermonkey）脚本资源站点'

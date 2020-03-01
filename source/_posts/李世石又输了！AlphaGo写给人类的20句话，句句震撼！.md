@@ -1,8 +1,8 @@
 ---
 title: 李世石又输了！AlphaGo写给人类的20句话，句句震撼！
 date: 2016-03-12 16:30
-categories: 随笔
-tags: 杂感
+categories: 脑洞
+tags: 脑洞
 toc: true
 ---
 1，别低头，贴膜会掉；别流泪，开关会跳！

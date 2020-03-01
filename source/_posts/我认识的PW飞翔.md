@@ -1,8 +1,8 @@
 ---
 title: 我认识的PW飞翔
 date: 2018-04-15 22:17
-categories: 随笔
-tags: 杂感
+categories: 人物
+tags: 人物
 toc: true
 ---
 人们都说工作以后，最亲的朋友莫过于大学室友。我和PW成为室友，却已经是毕业之后的事了。

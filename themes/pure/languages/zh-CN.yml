@@ -29,13 +29,13 @@ page:
   movies: 电影
   movies-desc: 个人喜欢的电影推荐给大家
   links: 推荐链接
-  links-desc: 推荐一些个人比较喜欢的站点
+  links-desc: 推荐一些个人的或个人比较喜欢的站点
   about: 关于
 pagination: 
   next: 下一页
   prev: 上一页 
   page: 第 %d 页
-  pageof: Page %d of %s
+  pageof: ' %d / %s '
 widget:
   search: 搜索
   board: "\n"
