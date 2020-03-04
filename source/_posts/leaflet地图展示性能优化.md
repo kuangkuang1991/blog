@@ -53,23 +53,13 @@ toc: true
 
 再翻一遍文档，果然还是有的。和点位的判断类似，map.getBounds()下还有一个intersects方法。判断可视区域是否与指定的区域相交。如果把线段看作区域，确实可以用这个方法。
 
-但是还需要做一层处理。这次就只能翻源码了。intersects的参数是一个bounds类型的对象。包括了两个key：_southWest和_northEast。
+但是还需要做一层处理。这次就只能翻源码了。intersects的参数是一个bounds类型的对象。而geometryToLayer可以把线段转换为区域。于是：
 
 >let bounds = map.getBounds()
 >
->let lineBounds = {
+>var layer = L.GeoJSON.geometryToLayer(line, {}); //line是单个线段
 >
->​     _southWest: { lat: xxx, lng: xxx },
->
->​     _northEast: { lat: xxx, lng: xxx }
->
->}
-
-直接把线段的两个点包裹进去，还是不能调用成功。于是我加了一句
-
-> lineBounds.__proto__ = bounds.__proto__;
-
-将新建的区域的原型指向原有区域的原型。
+>​let areaContainLine = bounds.intersects(layer.getBounds())
 
 这样终于能调用成功了。效果也确实让人满意。判断非常准确。
 
