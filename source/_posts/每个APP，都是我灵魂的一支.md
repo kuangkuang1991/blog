@@ -1,8 +1,8 @@
 ---
 title: 每个APP，都是我灵魂的一支
 date: 2017-07-04 14:30
-categories: 随笔
-tags: 杂感
+categories: 数码
+tags: 数码
 toc: true
 ---
 [本文参与 豌豆荚x少数派征文](https://sspai.com/post/39738)

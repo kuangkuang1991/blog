@@ -1,7 +1,7 @@
 ---
 title: 用什么都别用iphone—【热点练笔1：iphone6s】
 date: 2015-09-13 14:58
-categories: 随笔
+categories: 数码
 tags: 
 - 数码
 toc: true
