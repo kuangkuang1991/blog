@@ -29,11 +29,11 @@ toc: true
 
 能不能直接减少数据呢？通过筛减点位的方式？
 
-后台同事找到了一种压缩算法：[矢量压缩算法-光栏法][https://blog.csdn.net/weixin_30342209/article/details/99275544]
+后台同事找到了一种压缩算法：[矢量压缩算法-光栏法](https://blog.csdn.net/weixin_30342209/article/details/99275544)
 
 大概意思就是在一条线上的密集点位进行抽稀。
 
-（后来也看到了一个JS抽稀的例子：[基于Geojson的点集的抽稀Js实现][]）
+（后来也看到了一个JS抽稀的例子：[基于Geojson的点集的抽稀Js实现](https://blog.csdn.net/weixin_34279246/article/details/94601391)）
 
 这样缩减之后，前端得到的数据量确实大大减少。然而问题还没结束。概化的显示只能在比较小的缩放层级上，大的层级，缩放到最大时，还是得老老实实把应该有的数据展示出来。这样的话，后台能做的确实有限。
 
@@ -55,11 +55,13 @@ toc: true
 
 但是还需要做一层处理。这次就只能翻源码了。intersects的参数是一个bounds类型的对象。而geometryToLayer可以把线段转换为区域。于是：
 
->let bounds = map.getBounds()
->
->var layer = L.GeoJSON.geometryToLayer(line, {}); //line是单个线段
->
->​let areaContainLine = bounds.intersects(layer.getBounds())
+```JavaScript
+let bounds = map.getBounds()
+
+var layer = L.GeoJSON.geometryToLayer(line, {}); //line是单个线段
+
+​let areaContainLine = bounds.intersects(layer.getBounds())
+```
 
 这样终于能调用成功了。效果也确实让人满意。判断非常准确。
 
@@ -71,6 +73,6 @@ Leaflet.Canvas-Markers。这个插件就静静躺在plugins页面的marker部分
 
 <p style="text-align:center;"><img src="/images/1583050434859.png" width="50%" height="50%" title="" alt=""/></p>
 
-看demo：<https://ejuke.github.io/Leaflet.Canvas-Markers/examples/index.html>
+看[demo](https://ejuke.github.io/Leaflet.Canvas-Markers/examples/index.html)
 
 然而遗憾的是它使用的是原生的L.icon，这样就无法像使用divIcon那样去自定义图标的颜色。只能当做某种性能模式的选择项。
