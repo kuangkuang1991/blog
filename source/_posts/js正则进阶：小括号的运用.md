@@ -2,10 +2,12 @@
 title: js正则进阶：小括号的运用
 date: 2020-07-16 22:48
 categories: 技术
-tags: 技术 JS JS基础
+tags: 
+- 技术
+- JS
+- JS基础
 toc: true
 ---
-
 
 ## (pattern) 单独匹配
 
