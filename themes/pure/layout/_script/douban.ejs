@@ -158,7 +158,10 @@
               // console.log('=src=', i, imgDoms[i]);
               if (!imgDoms[i]) return;
               // console.log('=src=22', imgDoms[i].getAttribute("data-src"));
-              imgDoms[i].src = imgDoms[i] && imgDoms[i].getAttribute("data-src");
+              let src = imgDoms[i] && imgDoms[i].getAttribute("data-src");
+              imgDoms[i].src = src;
+              let pa = src.match(/(?<=[a-z]+\/)(\S)+(?=\.)/g)
+              imgDoms[i].title = pa && pa[0];
               imgDoms[i].className = 'book showw';
             }
           }, 1000);

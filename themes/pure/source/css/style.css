@@ -4064,6 +4064,7 @@ svg {
 .w-full,
 .w-full img {
   width: 100% !important;
+  /* max-height: 65px; */
   max-width: 100% !important;
 }
 
@@ -4778,6 +4779,17 @@ a.label:focus {
   margin-bottom: 21px;
   background-color: #fff;
   border: 1px solid #f2f2f2;
+  height: 72px;
+  overflow: hidden;
+}
+
+.panel .text-muted{
+  font-size: .8vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  width: 90%;
 }
 
 .panel .article-title {
