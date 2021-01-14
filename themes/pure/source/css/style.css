@@ -758,10 +758,13 @@ blockquote {
   padding: 10.5px 16px;
   margin: 0 0 21px;
   border: 1px dotted #eee;
-  border-left: 3px solid #c8c5c5;
-  background-color: #e9e7e7;
+  border-left: 3px solid #2d2d2d;
+  background-color: #efefef;
   font-style: italic;
+  color: #53a73e;
+  text-align: left;
   font-weight: lighter;
+  font-size: 15px;
 }
 
 blockquote p:last-child,
@@ -4061,6 +4064,7 @@ svg {
 .w-full,
 .w-full img {
   width: 100% !important;
+  /* max-height: 65px; */
   max-width: 100% !important;
 }
 
@@ -4775,6 +4779,17 @@ a.label:focus {
   margin-bottom: 21px;
   background-color: #fff;
   border: 1px solid #f2f2f2;
+  height: 72px;
+  overflow: hidden;
+}
+
+.panel .text-muted{
+  font-size: .8vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  width: 90%;
 }
 
 .panel .article-title {
@@ -5640,6 +5655,7 @@ pre code {
 .highlight pre {
   border: none;
   margin: 0;
+  font-size: 16px;
 }
 
 .highlight table {
