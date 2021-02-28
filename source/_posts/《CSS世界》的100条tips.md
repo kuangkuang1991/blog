@@ -1,8 +1,8 @@
 ---
 title: 《CSS世界》的100条tips
 date: 2021-02-21 21:10
-categories: 随笔
-tags: 杂感
+categories: 技术
+tags: JS JS基础
 toc: true
 ---
 
