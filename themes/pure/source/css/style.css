@@ -4779,8 +4779,12 @@ a.label:focus {
   margin-bottom: 21px;
   background-color: #fff;
   border: 1px solid #f2f2f2;
-  height: 72px;
+  /* height: 72px; */
   overflow: hidden;
+}
+
+.article-links .panel{
+  height: 72px;
 }
 
 .panel .text-muted{
@@ -4805,7 +4809,7 @@ a.label:focus {
   word-wrap: break-word !important;
 }
 
-.panel-body {
+.article-links .panel-body {
   padding: 15px;
 }
 
