@@ -5526,7 +5526,8 @@ table table {
 }
 
 pre .comment {
-  color: #8e908c;
+  color: #6f6f6f;
+  font-style: italic;
 }
 
 pre .variable,
@@ -5599,6 +5600,7 @@ pre,
   font-size: 13px;
   color: #4d4d4c;
   line-height: 1.5;
+  background: #191919;
 }
 
 .highlight .gutter pre,
@@ -5636,7 +5638,7 @@ pre code {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #f6f6f6;
+  background-color: #464646;
   padding: 0 10px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -5659,7 +5661,10 @@ pre code {
 .highlight pre {
   border: none;
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
+  font-family: 'Monaco';
+  background-color: #1f1f1f;
+  color: #989897;
 }
 
 .highlight table {
@@ -5699,6 +5704,11 @@ pre code {
 .highlight .line {
   height: 24px;
   line-height: 24px;
+  color: #f9f5f5;
+}
+
+.gutter .line{
+  color: #345;
 }
 
 .highlight .gutter pre {
