@@ -64,4 +64,6 @@ var btn = L.DomUtil.create('button', '', container);
 
 <p style="text-align:center;"><img src="/images/选点位.png" style="width:30%"  title="" alt=""/></p>
 
+此外，leaflet plugins也提供了类似问题的处理方式，如 [OverlappingMarkerSpiderfier](https://github.com/jawj/OverlappingMarkerSpiderfier-Leaflet)，[demo](http://jawj.github.io/OverlappingMarkerSpiderfier-Leaflet/demo.html)
+
 
