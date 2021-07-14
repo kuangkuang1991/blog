@@ -11,16 +11,31 @@ toc: true
 
 ### 1.[Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster) 点位聚合
 
-聚合插件
+用法：
 
-[demo](https://leaflet.github.io/Leaflet.markercluster/example/marker-clustering-realworld.388.html)
+````javascript
+
+import 'leaflet.markercluster';
+
+import './MarkerCluster.css';
+
+markerClusterGroup = L.markerClusterGroup();
+
+markerClusterGroup.addLayer(marker);
+
+map.addLayer(markerClusterGroup);
+
+
+````
+
+[点击查看demo](https://leaflet.github.io/Leaflet.markercluster/example/marker-clustering-realworld.388.html)
 
 
 ### 2.[Leaflet.PixiOverlay](https://github.com/manubb/Leaflet.PixiOverlay)
 
 使用Pixi.js绘制叠加层，Pixi.js是一个使用 WebGL 绘制的 JavaScript 库
 
-[demo](https://manubb.github.io/Leaflet.PixiOverlay/french-cities.html)
+[点击查看demo](https://manubb.github.io/Leaflet.PixiOverlay/french-cities.html)
 
 
 ### 3.[leaflet-markers-canvas](https://github.com/lipton-ice-tea/leaflet-canvas-markers)
@@ -40,11 +55,15 @@ markersCanvas.addMarker(marker, null);
 
 ````
 
+[点击查看demo](https://lipton-ice-tea.github.io/leaflet-canvas-markers)
+
 ### 4.[leaflet.canvas-markers](https://github.com/corg/Leaflet.Canvas-Markers)
 
 用法：
 
 ````javascript
+
+import './leaflet.canvas-markers';
 
 markersCanvas = L.canvasIconLayer({}).addTo(map);
 
@@ -56,6 +75,8 @@ ciLayerref.current.addLayers(markers);
 
 
 ````
+
+[点击查看demo](https://ejuke.github.io/Leaflet.Canvas-Markers/examples/index.html)
 
 使用插件leaflet.canvas-markers在缩放时，图标的缩放会产生延迟，使用[fork的分支](https://github.com/corg/Leaflet.Canvas-Markers)
 
