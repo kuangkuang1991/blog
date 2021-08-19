@@ -4796,6 +4796,10 @@ a.label:focus {
   width: 90%;
 }
 
+.panel .article-meta, .panel .article-title{
+  padding-left: 5px;
+}
+
 .panel .article-title {
   display: -webkit-box;
   overflow: hidden;
@@ -7193,7 +7197,7 @@ body.okayNav-loaded {
 }
 
 .ins-section .ins-search-item .ins-search-preview {
-  height: 15px;
+  /* height: 15px; */
   font-size: 12px;
   color: #9a9a9a;
   margin: 5px 0 0 20px;
