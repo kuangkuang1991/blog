@@ -85,7 +85,24 @@ inject: ['user'],
 </script>
 ````
 
+4.自定义指令
 
+ ````javascript
+
+  directives: {
+    myfocus: {
+      mounted(el) {
+        el.focus();
+      },
+    },
+  },
+
+  // 使用
+  <input v-myfocus>
+
+ ````
+
+ 作用：选项中derectives下的myfocus与模板中的v-myfocus绑定，声明了v-myfocus的节点，会在mounted生命周期执行编写的事件函数，参数是对应节点
 
 ### vue人性化的部分
 
