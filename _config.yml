@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: '框框之下'
+title: "框框之下"
 subtitle:
 description:
 keywords:
-author: '框框之下'
+author: "框框之下"
 language: zh-CN
 timezone:
 
@@ -43,16 +43,16 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -79,9 +79,10 @@ aboutme: 框框之下，是自由<br><br>荒诞之中，即真理<br>
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
- type: git
- repo: git@github.com:chenkuangkuang/chenkuangkuang.github.io.git
- branch: master
+  type: git
+  ## repo: git@github.com:chenkuangkuang/chenkuangkuang.github.io.git
+  repo: https://oauth2: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@github.com/chenkuangkuang.github.io
+  branch: master
 
 jsonContent:
   keywords: false # (english, spanish, polish, german, french, italian, dutch, russian, portuguese, swedish)
@@ -106,20 +107,20 @@ jsonContent:
 neat_enable: true
 neat_html:
   enable: true
-  exclude:  
+  exclude:
 neat_css:
   enable: true
   exclude:
-    - '*.min.css'
+    - "*.min.css"
 neat_js:
   enable: true
   mangle: true
   output:
   compress:
   exclude:
-    - '*.min.js'
+    - "*.min.js"
 
 # Security
 ##
 encrypt:
-    enable: true
+  enable: true
