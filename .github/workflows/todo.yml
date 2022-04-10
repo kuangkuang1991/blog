@@ -1,4 +1,3 @@
-
 name: Hexo Auto-Deploy
 on: [push]
 
@@ -8,32 +7,32 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 1. git checkout...
-      uses: actions/checkout@v1
-      
-    - name: 2. setup nodejs...
-      uses: actions/setup-node@v1
-    
-    - name: 3. install hexo...
-      run: |
-        npm install hexo-cli -g
-        npm install
-        
-    - name: 4. hexo generate public files...
-      run: |
-        hexo clean
-        hexo g  
+      - name: 1. git checkout...
+        uses: actions/checkout@v1
 
-    - name: 5. deploy 'public files' to 'xxx.github.io' repo...
-      env:
-        GH_REF: https://chenkuangkuang:${{ secrets.GH_TOKEN }}@github.com/chenkuangkuang/chenkuangkuang.github.io.git
-      run: |
-        git config --global user.name "chenkuangkuang"
-        git config --global user.email "540342678@qq.com"
-        
-        git clone ${GH_REF} hexo-public
-        cp -rf public/* hexo-public/        
-        cd hexo-public
-        git add .
-        git commit -am "Deployed by GitHub Actions ..."
-        git push origin master
+      - name: 2. setup nodejs...
+        uses: actions/setup-node@v1
+
+      - name: 3. install hexo...
+        run: |
+          npm install hexo-cli -g
+          npm install
+
+      - name: 4. hexo generate public files...
+        run: |
+          hexo clean
+          hexo g
+
+      - name: 5. deploy 'public files' to 'xxx.github.io' repo...
+        env:
+          GH_REF: https://chenkuangkuang:${{ secrets.DEPLOY_KEY }}@github.com/chenkuangkuang/chenkuangkuang.github.io.git
+        run: |
+          git config --global user.name "chenkuangkuang"
+          git config --global user.email "540342678@qq.com"
+
+          git clone ${GH_REF} hexo-public
+          cp -rf public/* hexo-public/        
+          cd hexo-public
+          git add .
+          git commit -am "Deployed by GitHub Actions ..."
+          git push origin master

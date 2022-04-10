@@ -82,6 +82,8 @@ deploy:
   type: git
   repo: git@github.com:chenkuangkuang/chenkuangkuang.github.io.git
   branch: master
+  name: chenkuangkuang
+  eamil: 540342678@qq.com
 
 jsonContent:
   keywords: false # (english, spanish, polish, german, french, italian, dutch, russian, portuguese, swedish)
