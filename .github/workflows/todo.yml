@@ -27,7 +27,7 @@ jobs:
 
       - name: 5. deploy 'public files' to 'xxx.github.io' repo...
         env:
-          GH_REF: https://${{ secrets.TOKEN }}@github.com/chenkuangkuang/chenkuangkuang.github.io.git
+          GH_REF: https://${{ secrets.NEW_TOKEN }}@github.com/chenkuangkuang/chenkuangkuang.github.io.git
         run: |
           git config --global user.name "chenkuangkuang"
           git config --global user.email "540342678@qq.com"
