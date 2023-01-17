@@ -26,15 +26,14 @@ jobs:
           hexo g
 
       - name: 5. deploy 'public files' to 'xxx.github.io' repo...
-        env:
-          GH_REF: https://${{ secrets.NEW__TOKEN }}@github.com/chenkuangkuang/chenkuangkuang.github.io.git
         run: |
+          mkdir -p ~/.ssh/
+          echo "${{ secrets.ACTION }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
           git config --global user.name "chenkuangkuang"
           git config --global user.email "540342678@qq.com"
+          git config --global core.quotepath false
 
-          git clone ${GH_REF} hexo-public
-          cp -rf public/* hexo-public/        
-          cd hexo-public
-          git add .
-          git commit -am "Deployed by GitHub Actions ..."
-          git push origin master
+          hexo d
