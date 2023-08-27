@@ -7041,7 +7041,7 @@ body.okayNav-loaded {
 
 .donate-box .donate-head:before {
   content: '\201c';
-  left: 30px;
+  left: -50px;
 }
 
 .donate-box .donate-head:after {
