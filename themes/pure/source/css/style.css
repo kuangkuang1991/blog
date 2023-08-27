@@ -6494,6 +6494,13 @@ body.no-sidebar .sidebar {
   margin-top: 20px;
 }
 
+.article-footer .post-copyright-link a{
+  max-width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+}
+
 /**
  * collection
  */
