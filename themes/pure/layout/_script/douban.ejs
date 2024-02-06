@@ -1,144 +1,8 @@
 <script>
-  function show(id) {
-    document.getElementById('reading').classList.remove('active');
-    document.getElementById('read').classList.remove('active');
-    document.getElementById('wish').classList.remove('active');
-    document.getElementById('reading').classList.add('hide');
-    document.getElementById('read').classList.add('hide');
-    document.getElementById('wish').classList.add('hide');
-
-    var ele = document.getElementById(id);
-    ele.classList.remove('hide');
-    ele.classList.add('active');
-
-    document.getElementById('reading-tab').classList.remove('active');
-    document.getElementById('read-tab').classList.remove('active');
-    document.getElementById('wish-tab').classList.remove('active');
-    document.getElementById(id + '-tab').classList.add('active');
-  };
   var imgs = ["24堂财富课.jpg", "28岁赚千万.jpg", "E·B·怀特随笔.jpg", "一个.jpg", "一个人的好天气.jpg", "一个村庄里的中国.jpg", "一个陌生女人的来信.jpg", "一個人住第5年.jpg", "一句顶一万句.jpg", "一课经济学.jpg", "万历十五年.jpg", "万水千山走遍.jpg", "万物简史.jpg", "三体.jpg", "三体X.jpg", "三杯茶.jpg", "上海堡垒.jpg", "世界尽头与冷酷仙境.jpg", "中国历代政治得失.jpg", "中国哲学简史.jpg", "中国大历史.jpg", "中国近代史.jpg", "临高启明.jpg", "九人.jpg", "乡土中国.jpg", "乡村教师.jpg", "乱翻书.jpg", "亲爱的安德烈.jpg", "人类的故事.jpg", "人类简史.jpg", "从一到无穷大.jpg", "优势谈判.jpg", "会有天使替我爱你.jpg", "佛祖在一号线.jpg", "你一定爱读的欧洲极简史.jpg", "你在天堂里遇见的五个人.jpg", "你的生命有什么可能.jpg", "俗话说.jpg", "偷书贼.jpg", "傅雷家书.jpg", "兄弟.jpg", "全球通史.jpg", "全频带阻塞干扰.jpg", "八卦医学史.jpg", "八月未央.jpg", "六神磊磊读唐诗.jpg", "共同的底线.jpg", "共悟人间.jpg", "冬牧场.jpg", "刀锋.jpg", "创京东.jpg", "务虚笔记.jpg", "动物庄园.jpg", "即兴判断.jpg", "历代经济变革得失.jpg", "历史深处的忧虑.jpg", "历史的坏脾气.jpg", "受戒.jpg", "台北人.jpg", "史玉柱自述.jpg", "周鸿祎自述.jpg", "呼兰河传.jpg", "哈佛女孩刘亦婷.jpg", "哥伦比亚的倒影.jpg", "喧哗与骚动.jpg", "四喜忧国.jpg", "围城.jpg", "城南旧事.jpg", "墨迹.jpg", "复活.jpg", "大国霸业的兴废.jpg", "大民小国.jpg", "大败局.jpg", "大道当然.jpg", "天意.jpg", "天才在左疯子在右.jpg", "太平天国.jpg", "失控.jpg", "好好说话.jpg", "如何有效阅读一本书.jpg", "如彗星划过夜空.jpg", "妞妞.jpg", "嫌疑人X的献身.jpg", "学会提问.jpg", "守得住才叫爱.jpg", "守脑如玉.jpg", "安德的游戏.jpg", "安静的美国人.jpg", "寻路中国.jpg", "小强升职记.jpg", "小王子.jpg", "尘埃落定.jpg", "带一本书去巴黎.jpg", "带着鲑鱼去旅行.jpg", "平凡的世界.jpg", "年少荒唐.jpg", "张晓风精选集.jpg", "当彩色的声音尝起来是甜的.jpg", "徒步中国.jpg", "微纪元.jpg", "微观经济学.jpg", "思想国.jpg", "恶意.jpg", "悟空传.jpg", "情人.jpg", "我不是教你诈.jpg", "我不是潘金莲.jpg", "我与地坛.jpg", "我也有一个梦想.jpg", "我们仨.jpg", "我向百姓说实话.jpg", "我在美国当农民.jpg", "我把一切告诉你1.jpg", "我把一切告诉你2.jpg", "我把一切告诉你3.jpg", "我爱问连岳.jpg", "我的奋斗.jpg", "我的阿勒泰.jpg", "我读书少，你可别骗我.jpg", "把时间当作朋友.jpg", "抗战时代生活史.jpg", "拆掉思维里的墙.jpg", "挪威的森林.jpg", "撒哈拉的故事.jpg", "故乡的云.jpg", "故乡相处流传.jpg", "斜屋犯罪.jpg", "新参者.jpg", "新宋.jpg", "无人生还.jpg", "无价.jpg", "时生.jpg", "明朝那些事儿.jpg", "昨天的云.jpg", "显微镜下的大明.jpg", "智齿.jpg", "暗时间.jpg", "月亮与六便士.jpg", "朗读者.jpg", "朝花夕拾.jpg", "李敖快意恩仇录.jpg", "极简新药发现史.jpg", "林清玄散文.jpg", "枪炮、病菌与钢铁.jpg", "梦里花落知多少.jpg", "槽边往事.jpg", "此间的少年.jpg", "水星播种.jpg", "江城.jpg", "江村经济.jpg", "沉默的大多数.jpg", "沸腾十五年.jpg", "流浪地球.jpg", "浪潮之巅.jpg", "浮生六记.jpg", "湘行散记.jpg", "潜规则.jpg", "激荡三十年.jpg", "激荡十年.jpg", "灿烂千阳.jpg", "爱你就像爱生病.jpg", "牛奶可乐经济学.jpg", "牧羊少年奇幻之旅.jpg", "献给阿尔吉侬的花束.jpg", "王二的经济学故事.jpg", "王晋康科幻中篇系列.jpg", "玫瑰的名字.jpg", "球状闪电.jpg", "生命的不可思议.jpg", "甲骨文.jpg", "白夜行.jpg", "白鹿原.jpg", "盗墓笔记.jpg", "目送.jpg", "看见.jpg", "福尔摩斯探案集.jpg", "窗边的小豆豆.jpg", "第一炉香.jpg", "第七天.jpg", "精进.jpg", "素履之往.jpg", "红楼梦.jpg", "红玫瑰与白玫瑰.jpg", "缘缘堂随笔.jpg", "美国最高法院风云.jpg", "美国种族简史.jpg", "联想风云.jpg", "肖申克的救赎.jpg", "胡雪岩.jpg", "腾讯传.jpg", "自由在高处.jpg", "苏东坡传.jpg", "苏菲的世界.jpg", "英雄的食材和神做法.jpg", "荒废集.jpg", "菊与刀.jpg", "蒋廷黻回忆录.jpg", "蔡康永的说话之道.jpg", "血酬定律.jpg", "西方政治思想史.jpg", "西潮.jpg", "西班牙旅行笔记.jpg", "觅渡.jpg", "解忧杂货店.jpg", "认得几个字.jpg", "记忆像铁轨一样长.jpg", "许三观卖血记.jpg", "谜男方法.jpg", "超级符号就是超级创意.jpg", "超越自己.jpg", "趣味生活简史.jpg", "跌荡一百年.jpg", "迎男而上.jpg", "这些人，那些事.jpg", "迦陵说词讲稿.jpg", "追风筝的人.jpg", "退步集.jpg", "送你一颗子弹.jpg", "野火集.jpg", "金融的逻辑.jpg", "银元时代生活史.jpg", "阿勒泰的角落.jpg", "雪国.jpg", "霍乱时期的爱情.jpg", "青春散场.jpg", "面纱.jpg", "韩寒五年文集.jpg", "顾中一说.jpg", "饥饿的女儿.jpg", "魔鬼搭讪学.jpg", "魔鬼约会学.jpg", "魔鬼经济学.jpg", "鲁宾逊漂流记.jpg", "黑客与画家.jpg"];
   (function () {
-    var read = [];
-    var wish = [];
-    var reading = [];
 
-    // XHR 获取豆瓣书单数据，数据格式json
-    // function loadDoubanCollections() {
-    //   var xhr = new XMLHttpRequest();
-    //   // https://api.douban.com/v2/book/user/:name/collections
-    //   xhr.open('GET', 'http://7b1fa0.com1.z0.glb.clouddn.com/douban-20170429-1.json', true);
-
-    //   xhr.onload = function() {
-    //     // console.log(this);
-    //     if (this.status >= 200 && this.status < 300) {
-    //       var res = JSON.parse(this.response);
-    //       searchData = res;
-    //       onLoadDouban(searchData);
-    //     } else {
-    //       console.error(this.statusText);
-    //     }
-    //   };
-
-    //   xhr.onerror = function() {
-    //     console.error(this.statusText);
-    //   };
-
-    //   xhr.send();
-    // }
-
-    // Ajax 获取豆瓣书单数据，数据格式json
-    function loadDoubanCollections() {
-      var _this = this;
-      // https://api.douban.com/v2/book/user/:name/collections?start=0&count=100
-      var url = "https://api.douban.com/v2/book/user/<%= theme.douban.user %>/collections"
-      $.ajax({
-        url: url,
-        type: 'GET',
-        data: {
-          start:<%= theme.douban.start %>, // 从哪一条记录开始
-          count:<%= theme.douban.count %> // 获取豆瓣书单数据条数
-      },
-        dataType: 'JSONP', //here
-        success: function (data) {
-          // console.log(data);
-          onLoadDouban(data);
-        }
-      });
-    }
-
-    function onLoadDouban(data) {
-      if (data['count'] > 0) {
-        for (var i = 0; i < data['collections'].length; ++i) {
-          resolveBook(data['collections'][i]);
-        }
-      }
-      render();
-    }
-
-    function resolveBook(book) {
-      if (book['status'] == 'read') {
-        read.push(book);
-      }
-      if (book['status'] == 'wish') {
-        wish.push(book);
-      }
-      if (book['status'] == 'reading') {
-        reading.push(book);
-      }
-    }
-
-    function render() {
-      renderList(read, 'read');
-      renderList(wish, 'wish');
-      renderList(reading, 'reading');
-
-      document.getElementById('reading-total').innerHTML = '(' + reading.length + ')';
-      document.getElementById('read-total').innerHTML = '(' + read.length + ')';
-      document.getElementById('wish-total').innerHTML = '(' + wish.length + ')';
-
-      show('reading');
-      document.getElementById('loading').classList.add('hide');
-    }
-
-    function renderList(list, id) {
-      for (var i = 0; i < list.length; ++i) {
-        var h = renderBook(list[i]);
-        if (i > 0 && i % 4 == 3) {
-          h += '<div class="clearfix"></div>';
-        }
-        document.getElementById(id).innerHTML = document.getElementById(id).innerHTML + h;
-      }
-    }
-
-    function renderBook(book) {
-      var html = '<div class="col-sm-6 col-md-6"><div class="panel panel-default hover-grow"><div class="panel-body">'
-        + '<div class="media media-middle book book-' + book['status'] + '" itemscope itemtype="http://schema.org/Book">'
-        + '<div class="media-left"><a class="media-middle" target="_blank" href="' + book.book.alt + '" rel="external nofollow noopener noreferrer"><img class="media-object" src="' + book.book.image + '" itemprop="image"/></a></div><div class="media-body">'
-        + '<h3 class="media-heading" itemprop="name"><a target="_blank" href="' + book.book.alt + '" rel="external nofollow noopener noreferrer">' + book.book.title + '</a></h3>'
-        + '<p class="meta text-nowrap-1x"><small itemprop="author">' + book.book.author[0] + '</small> / <small itemprop="datePublished">' + book.book.pubdate + '</small> / <small itemprop="ratingValue">' + book.book.rating.average + '分</small></p>'
-        + '<p class="meta text-nowrap-1x">' + book.updated.substring(0, 10) + resolveRating(book.rating) + resolveTags(book.tags) + '</p>'
-        + '<div class="comments text-muted text-nowrap-3x" itemprop="comment">' + (book.comment ? book.comment : '') + '</div>'
-        + '</div>' + '</div>' + '</div>' + '</div>' + '</div>';
-      return html;
-    }
-
-    function resolveRating(rating) {
-      if (rating && rating.value) {
-        return ' / ' + rating.value + '星';
-      }
-      return '';
-    }
-
-    function resolveTags(tags) {
-      if (tags && tags.length > 0) {
-        var html = ' / ';
-        for (var i = 0; i < tags.length; ++i) {
-          html += tags[i] + ' ';
-        }
-        return html;
-      }
-      return '';
-    }
+    console.log('imgs.length=', imgs.length);
 
     function lazyLoad() {
       var bookBody = document.getElementById("booksBody");
@@ -146,13 +10,13 @@
       var moveHeight = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
       // var screenHeight = window.innerHeight;
       var screenHeight = window.innerHeight;
-      // console.log('=imgs=', imgs);
-      for (var i = 0; i < imgDoms.length; i++) {
+      console.log('=imgDoms.length=333', imgDoms.length, imgs.length);
+      for (var i = 0; i < imgs.length; i++) {
         (function (i) {
           setTimeout(function () {
             if (!imgDoms[i]) return;
             var elementTop = imgDoms[i].offsetTop;
-            console.log('=src=00', imgs[i], elementTop, screenHeight, moveHeight, screenHeight + moveHeight);
+            // console.log('=src=00', imgs[i], elementTop, screenHeight, moveHeight, screenHeight + moveHeight);
             // 元素可见
             if (screenHeight + moveHeight > elementTop && !imgDoms[i].className.includes("show")) {
               // console.log('=src=', i, imgDoms[i]);
@@ -164,7 +28,7 @@
               imgDoms[i].title = pa && pa[0];
               imgDoms[i].className = 'book showw';
             }
-          }, 1000);
+          }, 100);
         })(i)
       }
     }
@@ -175,12 +39,18 @@
         lazyLoad();
     }
     function loadBooks() {
-      var booksBody = document.getElementById("booksBody")
-      for (var i = 0; i < imgs.length; i++) {
-        var img = document.createElement("img");
-        img.src = '/images/' + imgs[i];
-        booksBody.append(img);
+      var booksBody = document.getElementById("booksBody");
+      var booksBodyInnger = document.createDocumentFragment();
+      var times = 0;
+      console.log('11111=', 11111);
+      for (let i = 0; i < imgs.length; i++) {
+        let img = document.createElement("img");
+        img.setAttribute("data-src", '/images/' + imgs[i]);
+        // booksBodyInnger.append(img);
+        times++;
       }
+      booksBody.append(booksBodyInnger);
+      console.log('2222=', times);
     }
 
     setTimeout(function () {
