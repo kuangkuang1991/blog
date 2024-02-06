@@ -558,7 +558,12 @@ mark,
 .books{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+
+.books:after{
+  content: '';
+  /* flex: auto;    或者flex: 1 */
 }
 
 .books img{
